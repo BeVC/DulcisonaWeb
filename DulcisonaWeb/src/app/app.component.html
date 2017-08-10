@@ -1,16 +1,18 @@
-﻿<h1>Application says what where when?</h1>
-<ul *ngFor="let value of apiValues">
-  <li>{{value}}</li>
-</ul>
+﻿<nav>
+  <ul class="main">
+    <li><a routerLink="/about-us">over ons</a></li>
+    <li><a routerLink="/about-us">geluid</a></li>
+    <li><a routerLink="/about-us">beeld</a></li>
+    <li><a routerLink="/about-us">gastenboek</a></li>
+    <li><a routerLink="/about-us">aanbod</a></li>
+    <li><a routerLink="/about-us">contact</a></li>
+  </ul>
 
-<ul>
-  <li>over ons</li>
-  <li>geluid</li>
-  <li>beeld</li>
-  <li>gastenboek</li>
-  <li>aanbod</li>
-  <li>contact</li>
-</ul>
+  <ul class="login">
+    <li><a routerLink="/about-us">login</a></li>
+  </ul>
+</nav>
+
 
 
 <router-outlet></router-outlet>
