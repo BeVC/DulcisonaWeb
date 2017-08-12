@@ -11,14 +11,14 @@ import { OfferComponent } from './offer/offer.component';
 import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
-    { path: "", redirectTo: "", pathMatch: "full" },
-    { path: "**", component: NotFoundComponent },
+    { path: "", redirectTo: "", pathMatch: "full" },    
     { path: "about-us", component: AboutUsComponent },
     { path: "sound", component: SoundComponent },
     { path: "picture", component: PictureComponent },
     { path: "guestbook", component: GuestbookComponent },
     { path: "offer", component: OfferComponent },
-    { path: "contact", component: ContactComponent }
+    { path: "contact", component: ContactComponent },
+    { path: "**", component: NotFoundComponent },
 
 ];
 
