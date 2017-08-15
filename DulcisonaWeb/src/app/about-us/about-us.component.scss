@@ -1,0 +1,38 @@
+﻿@import "../../styles.scss";
+
+app-about-us {
+  @include page();
+
+  .curriculum {
+
+    img {
+      float:left;
+    }
+
+    .text {
+      width: 40%;
+      display: inline-block;
+      margin-left: 20px;
+
+      .title {
+        margin-bottom: 10px;
+
+        span {
+          font-size: 20px;
+
+          &:first-of-type {
+          }
+
+          &:nth-of-type(2) {
+            font-style: italic;
+            font-weight: bold
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
