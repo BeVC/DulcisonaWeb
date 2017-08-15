@@ -1,4 +1,4 @@
-@mixin clearfix {
+﻿@mixin clearfix {
     visibility: hidden;
     display: block;
     font-size: 0;
@@ -7,6 +7,9 @@
     height: 0;
 }
 
-@mixin page {
-    display: block;
+@mixin page($bg-color: $bg-placeholder) {
+  display: block;
+  background-color: $bg-color;
+  height: 100vh;
+  padding: 20px;
 }

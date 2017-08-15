@@ -1,0 +1,35 @@
+﻿@import "../../styles.scss";
+
+app-contact {
+  @include page();
+  
+  .main-contact{
+    text-decoration: none;
+    color: $black;
+    font-size: 20px;
+  }
+
+  .contact{
+    margin-bottom:20px;
+
+    p{
+      span{
+        &:nth-of-type(2){
+          font-style:italic;
+        }
+      }
+
+      &:first-of-type{
+        font-weight:bold;
+      }
+    }
+
+    a{
+      color: $black;
+    }
+
+    &:first-of-type{
+      margin-top: 20px;
+    }
+  }
+}

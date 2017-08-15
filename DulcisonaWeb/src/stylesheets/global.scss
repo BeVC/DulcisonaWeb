@@ -29,11 +29,23 @@ $black: #000000;
 $white: #ffffff;
 $intro-bg: #4d4948;
 
+/* BACKGROUNDS */
+$bg-placeholder: #e8e8e8;
+
 /**/
+html{
+}
+
 body{
-    
 }
 
 ul{
   list-style-type: none;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px $black solid;
 }

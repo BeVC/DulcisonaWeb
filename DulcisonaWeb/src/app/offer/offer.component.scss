@@ -1,0 +1,62 @@
+﻿@import "../../styles.scss";
+
+app-offer {
+  @include page();
+
+  .offer-list {
+    margin-top: 30px;
+
+    li {
+      width:30%;
+      margin-bottom:20px;
+      padding-bottom: 20px;
+      border-bottom:1px solid $black;
+
+      .title {
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        p {
+          &:first-of-type {
+            font-size: 20px;
+          }
+
+          &:nth-of-type(2) {
+            font-style: italic;
+          }
+        }
+      }
+
+      .date {
+        font-weight: bold;
+      }
+
+      .description {
+        margin-bottom: 10px;
+        p {
+          font-style: italic;
+        }
+      }
+
+      .contact {
+        p {
+          font-weight: bold;
+        }
+
+        a {
+          text-decoration: none;
+          color: $black;
+        }
+      }
+
+      &:last-of-type{
+        border-bottom:none;
+        margin-bottom: 0;
+      }
+
+      &:after{
+        @include clearfix();
+      }
+    }
+  }
+}
