@@ -1,3 +1,43 @@
-<p>
-  guestbook works!
-</p>
+﻿<div class="left">
+  <div *ngIf="!showForm">
+    Je wenst een berichtje achter te laten?
+    Teken dan het gastenboek.
+    <button class="btn" (click)="uiOnSignGuestbookClicked()">Teken</button>
+  </div>
+  <div *ngIf="showForm">
+    <form>
+
+    </form>
+  </div>
+</div>
+<div class="right">
+  <ul class="list">
+    <li class="item">
+      <div class="header">
+        <div class="name-block">
+          <p>Aurèle Seghers</p>
+          <p>Lebbeke</p>
+        </div>
+        <div class="date">(22 november 2015 11:17)</div>
+      </div>
+      <div class="body">
+        Bravo Dulcisona!
+        Jullie "Petite Messe Solennelle" was een "grootse" vertoning. De blijdschap, de concentratie, de inzet en de voldoening waren van jullie gezicht af te lezen. Jullie zijn een bewonderenswaardig koor. Er is niets op het totale gebeuren aan te merken. De organisatie was af, de muzikanten geweldig, de solisten subliem en het koor voortreffelijk. Ben niettegenstaande de hevige regenvlagen met een blij en voldaan hart huiswaarts gereden. Dit was en is nog eens genieten! De staande ovatie en het langdurig applaus na jullie optreden zeggen genoeg.
+        Bedankt voor jullie inzet!
+        Ik voel mij uitverkoren omdat ik van jullie muziek heb mogen genieten!
+      </div>
+    </li>
+    <li>
+      <div class="header">
+        <div class="name-block">
+          <p>Guido Redant</p>
+          <p>Wingene</p>
+        </div>
+        <div class="date">(6 juli 2015 14:31)</div>
+      </div>
+      <div class="body">
+        Els Celis tilde gisteren het festival Juillet-Musical tot ongekende hoogte, door Marie-Catherine Baclin, Julie Bailly, Yves Saelens en Werner van Mechelen samen te programmeren met het koor Dulcisona (olv Marian Steyaert) in La Petite Messe Solennelle van Rossini. Nassogne was inderdaad te klein ! Grootse inspiratie, grootse realisatie. Bedankt Els, bedankt Marian !
+      </div>
+    </li>
+  </ul>
+</div>

@@ -2,4 +2,49 @@
 
 app-guestbook {
   @include page();
+
+  .left {
+    width: 50%;
+    float: left;
+  }
+
+  .right {
+    width: 50%;
+    float: left;
+
+    .list {
+      .item {
+        border-bottom: 1px solid $black;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+
+        .header {
+          .name-block {
+            display: inline-block;
+            width: 100%;
+
+            p {
+              &:first-of-type {
+                float: left;
+                font-weight: bold;
+              }
+            }
+
+            &:last-of-type {
+              float: right;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .date {
+          font-size: 12px;
+          font-style: italic;
+        }
+      }
+
+      .body {
+      }
+    }
+  }
 }
